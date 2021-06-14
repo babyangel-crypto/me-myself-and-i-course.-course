@@ -1,0 +1,16 @@
+title: 'Me, myself and I course.'
+description: Gihub learning course
+template:
+  repo: me-myself-and-i-course.-template
+  name: me-myself-and-i-course.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
